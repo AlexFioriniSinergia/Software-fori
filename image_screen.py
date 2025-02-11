@@ -1,5 +1,10 @@
+import dearpygui.dearpygui as dpg
+from image import create_image
 
 
-def screen_image(image):
+def start_screen_image(params):
+    texture = create_image(params)
 
-    return image
+    dpg.delete_item("Prima griglia")
+    dpg.delete_item("Seconda griglia")
+    dpg.delete_item("Salva")

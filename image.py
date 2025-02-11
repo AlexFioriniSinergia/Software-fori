@@ -2,7 +2,7 @@
 
 def create_image(params):
 
-    return image
+    return "test"
 
 def save_image(image, path):
     image.save(path)
